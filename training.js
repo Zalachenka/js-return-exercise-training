@@ -46,9 +46,22 @@ function counter(x,y) {
 };
 console.log(counter(8,23));
 
+// Counting between two non-ordinated numbers
+
 function advancedCounter(x,y) {
-	for (let i = y; i <=x; i++) {
+	for (let i = y; i >=x; i++) {
 		console.log(i);
 	};
 };
-console.log(counter(8,23));
+console.log(advancedCounter(23,8));
+
+// Counting from 0 to a number each second
+
+function synchronizedCounter(num) {
+	let i = 0
+	while (i <= num) {
+		console.log(i);
+		i++;
+	}
+}
+console.log(setInterval(synchronizedCounter(12, 1000)));
