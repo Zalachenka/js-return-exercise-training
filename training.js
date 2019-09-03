@@ -45,3 +45,10 @@ function counter(x,y) {
 	};
 };
 console.log(counter(8,23));
+
+function advancedCounter(x,y) {
+	for (let i = y; i <=x; i++) {
+		console.log(i);
+	};
+};
+console.log(counter(8,23));
