@@ -5,7 +5,7 @@ function largestNumber() {
 console.log(largestNumber());
 
 // Longest string function
-function longestString() {
+function longestString(x,y) {
 	var x = '2341312134'; 
     var y = '@#$%^&**((*&^'; 
   if (x.length > y.length) {
@@ -16,3 +16,14 @@ function longestString() {
   };
 };
 console.log(longestString());
+
+// Decreasing number function
+
+function countdown(num) {
+	
+	while (num >= 0) {
+		console.log(num);
+		num --;
+	}
+	};
+console.log(countdown(8));
