@@ -28,11 +28,11 @@ console.log(countdown(8));
 
 // Counting to number function
 
-function counter(n) {
+function simpleCounter(n) {
 	let i = 0
 	while (i <= n) {
 		console.log(i);
 		i++;
 	};
 };
-console.log(counter(4))
+console.log(simpleCounter(4))
