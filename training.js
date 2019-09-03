@@ -35,4 +35,13 @@ function simpleCounter(n) {
 		i++;
 	};
 };
-console.log(simpleCounter(4))
+console.log(simpleCounter(4));
+
+// Counting between two defined numbers function
+
+function counter(x,y) {
+	for (let i = x; i <= y; i++) {
+  		console.log(i);
+	};
+};
+console.log(counter(8,23));
