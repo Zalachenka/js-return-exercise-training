@@ -20,10 +20,19 @@ console.log(longestString());
 // Decreasing number function
 
 function countdown(num) {
-	
 	while (num >= 0) {
 		console.log(num);
-		num --;
-	}
+		num --;}
 	};
 console.log(countdown(8));
+
+// Counting to number function
+
+function counter(n) {
+	let i = 0
+	while (i <= n) {
+		console.log(i);
+		i++;
+	};
+};
+console.log(counter(4))
