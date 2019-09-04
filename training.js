@@ -59,10 +59,16 @@ console.log(advancedCounter(23,8));
 
 // Counting from 0 to a number each second
 
+let i = 0;
+
 function synchronizedCounter(num) {
-	let i = 0
-	while (i <= num) {
+	
+	if (i < num) {
 		i++;
-	};
+		console.log(i);
+	}
+	 else {
+	 	clearInterval();
+	}
 };
-console.log(setTimeout(synchronizedCounter(12), 1000));
+setInterval(function() { synchronizedCounter(10);}, 1000);
