@@ -49,9 +49,11 @@ console.log(counter(8,23));
 // Counting between two non-ordinated numbers
 
 function advancedCounter(x,y) {
-	for (let i = y; i >=x; i++) {
+	let i = y
+	while (i <= x) {
 		console.log(i);
-	};
+		i++;
+	}
 };
 console.log(advancedCounter(23,8));
 
