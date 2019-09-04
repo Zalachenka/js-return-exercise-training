@@ -62,8 +62,7 @@ console.log(advancedCounter(23,8));
 function synchronizedCounter(num) {
 	let i = 0
 	while (i <= num) {
-		console.log(i);
 		i++;
-	}
-}
-console.log(setInterval(synchronizedCounter(12, 1000)));
+	};
+};
+console.log(setTimeout(synchronizedCounter(12), 1000));
