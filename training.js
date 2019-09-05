@@ -39,12 +39,14 @@ console.log(simpleCounter(4));
 
 // Counting between two defined numbers function
 
-function counter(x,y) {
-	for (let i = x; i <= y; i++) {
-  		console.log(i);
-	};
+function counter(x, y){
+  if(x>y) {
+     return 0
+  }
+  console.log(x);
+  return counter(x+1, y);
 };
-console.log(counter(8,23));
+console.log(counter(4,12));
 
 // Counting between two non-ordinated numbers
 
