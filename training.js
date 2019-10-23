@@ -1,68 +1,63 @@
 // Largest number function
-function largestNumber() {
-  return Math.max(11, -2, 23, 4);
+function max(toto, titi) {
+  return toto > titi ? toto : titi;
 }
-console.log(largestNumber());
+function largestNumber(x, y, z, k) {
+  const firstBiggest = max(x, y);
+  const secondBiggest = max(z, k);
+  return max(firstBiggest, secondBiggest);
+}
+largestNumber();
 
 // Longest string function
-function longestString(x, y) {
-  var x = '2341312134';
-  var y = '@#$%^&**((*&^';
-  if (x.length > y.length) {
-    return 'x is a longer string';
-  } else {
-    return 'y is a longer string';
-  }
+function longestString(a, b) {
+  return a.length > b.length ? a : b;
 }
-console.log(longestString());
+longestString();
 
 // Decreasing number function
 
-function countdown(num) {
-  if (num <= 0) {
-    return 0;
+function countdown(n) {
+  console.log(n);
+  if (n >= 0) {
+    countdown(n - 1);
   }
-  console.log(num);
-  return countdown(num - 1);
 }
-console.log(countdown(8));
 
 // Counting to number function
 
-function simpleCounter(currentCounter, limit) {
-  console.log(currentCounter);
-  if (currentCounter >= limit) {
-    return 0;
+function simpleCounter(currentNum, limit) {
+  console.log(currentNum);
+  if (currentNum < limit) {
+    return simpleCounter(currentNum + 1, limit);
   }
-  return simpleCounter(currentCounter + 1, limit);
 }
-console.log(simpleCounter(0, 4));
+function counterWrapper(x) {
+  simpleCounter(0, x);
+}
+console.log(counterWrapper(8));
 
 // Counting between two defined numbers function
 
-function counter(x, y) {
-  if (x > y) {
-    return 0;
+function counter (x,y) {
+  if (x<y) {
+      console.log(x);
+      return counter(x+1; y)
   }
-  console.log(x);
-  return counter(x + 1, y);
 }
-console.log(counter(4, 12));
+console.log(1,5)
 
 // Counting between two non-sorted numbers
 
-function advancedCounter(x, y) {
-  if (x == y) {
-    console.log(x);
-    return 0;
-  } else if (x > y) {
-    return advancedCounter(y, x);
+function advancedCounter (x,y) {
+  if (x<y) {
+      counter(x,y)
   }
-  console.log(x);
-  return advancedCounter(x + 1, y);
+  else  {
+      counter(y,x)
+  }
 }
-console.log(advancedCounter(12, 4));
-
+advancedCounter(10,6)
 // Counting from 0 to a number each second
 
 let i = 0;
